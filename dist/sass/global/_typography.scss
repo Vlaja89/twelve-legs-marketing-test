@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0; 
+  
+}
+/* Font Responsive Calculation */
+$font-min-width: 480; // min width needed for calculation
+$font-max-width: 1200; // max width to for calculation
+
+// Set min/max font sizes for each element
+$max-font-h1: 73;
+$min-font-h1: 73;
+
+$max-font-h2: 73;
+$min-font-h2: 47;
+
+$max-font-h3: 43;
+$min-font-h3: 35;
+
+$max-font-h5: 0;
+$min-font-h5: 0;
+
+$max-font-h6: 0;
+$min-font-h6: 0;
+
+$max-font-body: 16;
+$min-font-body: 15;
+
+$max-font-number: 64;
+$min-font-number: 40;
+
+$max-font-news-title: 73;
+$min-font-news-title: 40;
+
+// Fonts
+$fonts: (
+  sizes: (
+    h1: (
+      max: $max-font-h1,
+      min: $min-font-h1
+    ),
+    h2: (
+      max: $max-font-h2,
+      min: $min-font-h2 
+    ),
+    h3: (
+      max: $max-font-h3,
+      min: $min-font-h3 
+    ),
+    body: (
+      max: $max-font-body,
+      min: $min-font-body 
+    ),
+    '.brand-number p': (
+      max: $max-font-number,
+      min: $min-font-number
+    ),
+    '.news-title h2': (
+      max: $max-font-news-title,
+      min: $min-font-news-title
+    )
+  )
+);
+
+// Key Values
+@function map-fetch($map, $keys) {
+  $key: nth($keys, 1);
+  $length: length($keys);
+  $value: map-get($map, $key);
+  @if ($length > 1) {
+    $rest: ();
+    @for $i from 2 through $length {
+      $rest: append($rest, nth($keys, $i))
+    }
+    @return map-fetch($value, $rest)
+  } @else {
+    @return $value;
+  }
+}
+
+// ITERATE THROUGH SIZES AND CREATE CLASSES ACCORDINGLY
+@each $size in map-keys(map-get($fonts, sizes)) {
+  #{$size} { font-size: #{map-fetch($fonts, sizes $size min)}px; }
+  @media (min-width: #{$font-min-width}px) and (max-width: #{$font-max-width}px){
+    #{$size} { 
+      font-size: calc( #{map-fetch($fonts, sizes $size min)}px + (#{map-fetch($fonts, sizes $size max )} - #{map-fetch($fonts, sizes $size min)}) * ( (100vw - #{$font-min-width}px) / ( #{$font-max-width} - #{$font-min-width}) ));
+    }
+  }
+  @media (min-width: #{$font-max-width}px){
+     #{$size} { 
+       font-size: #{map-fetch($fonts, sizes $size max)}px;
+     }
+  }
+}
+
+
+/**** Typography ****/
+h1 {
+  color: $greyscale900;
+  margin-bottom: 0;
+  line-height: 0.7;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  font-family: $font-lc-bold;
+  letter-spacing: -1px;
+}
+
+h2 {
+color: $greyscale900;
+line-height: 1;
+margin-bottom: 0;
+padding-bottom: 15px;
+font-family: $font-lc-bold;
+text-transform: uppercase;
+}
+
+h3 {
+color: $greyscale900;
+line-height: 1.3;
+margin-bottom: 0;
+padding-bottom: 15px;
+font-family: $font-lc-bold;
+text-transform: uppercase;
+}
+
+h4 {
+color: $black;
+line-height: 1.3;
+margin-bottom: 0;
+padding-bottom: 15px;
+font-family: $font-lc-bold;
+font-size: 27px;
+@media (max-width: 575px) {
+  font-size: 29px;
+}
+}
+
+h5 {
+color: $black;
+line-height: 1.3;
+margin-bottom: 0;
+padding-bottom: 15px;
+font-family: $font-lc-bold;
+}
+
+h6 {
+color: $black;
+line-height: 1.3;
+margin-bottom: 0;
+padding-bottom: 15px;
+font-family: $font-lc-bold;
+}
+
+p,a {
+  color: $greyscale900;
+  margin-bottom: 0;
+  line-height: 1.3;
+  font-family: $font-s-medium;
+  padding-bottom: 15px;
+}

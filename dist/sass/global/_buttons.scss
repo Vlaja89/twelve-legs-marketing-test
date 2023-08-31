@@ -1,0 +1,117 @@
+/**** Custom Button ****/
+.custom-btn {
+    color: $white;
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: $red;
+    padding: 5px 0px;
+    line-height: 1.1;
+    border: 0;
+    text-transform: uppercase;
+    width: fit-content;
+    font-family: $font-s-black;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    overflow: hidden;
+    position: relative;
+    @media (max-width: 575px) {
+      font-size: 14px;
+    }
+    &:hover {
+      color: $white;
+      text-decoration: none;
+      &:after {
+        animation: shine 1.6s ease;
+      }
+    }
+    &:focus {
+      outline: none;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -200%;
+      width: 200%;
+      height: 100%;
+      transform: skewX(-20deg);
+      background-image: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);
+    }
+    .button-inner {
+      border-top: 2px solid $white;
+      border-bottom: 2px solid $white;
+      padding: 6px 25px;
+      @media (max-width: 575px) {
+        padding: 15px 25px;
+      }
+    }
+    &:active {
+      transform: translateY(1px);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    }
+}
+
+.custom-link {
+    font-family: $font-lc-medium;
+    --max-font: 17;
+    --min-font: 13;
+    font-size: var(--responsive);
+    color: $white;
+    letter-spacing: 0.3px;
+    transition: all 0.3s ease-in-out;
+    background: transparent;
+    border: 0;
+    padding-top: 15px;
+    &:hover {
+      color: $white;
+      text-decoration: underline;
+    }
+    &:focus {
+      outline: none;
+    }
+}
+
+
+@-moz-keyframes shine {
+  100% {
+    left: 200%;
+  }
+}
+@-webkit-keyframes shine {
+  100% {
+    left: 200%;
+  }
+}
+@-o-keyframes shine {
+  100% {
+    left: 200%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 200%;
+  }
+}
+
+.main-btn {
+  .custom-btn {
+    width: 100%;
+    margin-top: 50px;
+    background: #FFF7F7;
+    padding: 4px 0px;
+    border: 2px solid $red;
+    @media (max-width: 768px) {
+      margin-top: 25px;
+    }
+    .button-inner {
+      font-size: 14px;
+      letter-spacing: 2px;
+      border-top: 2px solid $red;
+      border-bottom: 2px solid $red;
+      color: $red;
+      padding: 11px 25px;
+    }
+  }
+}

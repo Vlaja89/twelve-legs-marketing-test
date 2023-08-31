@@ -1,0 +1,87 @@
+
+/**** Fonts LostfieldCondensed ****/
+@font-face {
+    font-family: 'LostfieldCondensed-black';
+    src: url("../fonts/LostfieldCondensed-black.woff") format("woff"), url("../fonts/LostfieldCondensed-black.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal; }
+    
+@font-face {
+    font-family: 'LostfieldCondensed-bold';
+    src: url("../fonts/LostfieldCondensed-bold.woff") format("woff"), url("../fonts/LostfieldCondensed-bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal; }
+
+@font-face {
+    font-family: 'LostfieldCondensed-medium';
+    src: url("../fonts/LostfieldCondensed-medium.woff") format("woff"), url("../fonts/LostfieldCondensed-medium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal; }
+    
+@font-face {
+    font-family: 'LostfieldCondensed';
+    src: url("../fonts/LostfieldCondensed.woff") format("woff"), url("../fonts/LostfieldCondensed.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal; }
+    
+@font-face {
+    font-family: 'LostfieldCondensed-light';
+    src: url("../fonts/LostfieldCondensed-light.woff") format("woff"), url("../fonts/LostfieldCondensed-light.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal; }
+
+    
+/**** Fonts Satoshi ****/
+@font-face {
+    font-family: 'Satoshi-Black';
+    src: url("../fonts/Satoshi-Black.woff") format("woff"), url("../fonts/Satoshi-Black.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal; }
+    
+@font-face {
+    font-family: 'Satoshi-Bold';
+    src: url("../fonts/Satoshi-Bold.woff") format("woff"), url("../fonts/Satoshi-Bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal; }
+
+@font-face {
+    font-family: 'Satoshi-Medium';
+    src: url("../fonts/Satoshi-Medium.woff") format("woff"), url("../fonts/Satoshi-Medium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal; }
+    
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url("../fonts/Satoshi-Regular.woff") format("woff"), url("../fonts/Satoshi-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal; }
+    
+@font-face {
+    font-family: 'Satoshi-Light';
+    src: url("../fonts/Satoshi-Light.woff") format("woff"), url("../fonts/Satoshi-Light.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal; }
+
+/**** Fonts Nippo ****/
+@font-face {
+    font-family: 'Nippo-Bold';
+    src: url("../fonts/Nippo-Bold.woff") format("woff"), url("../fonts/Nippo-Bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal; }
+
+/**** Font Family ****/
+$font-lc-black: 'LostfieldCondensed-black';
+$font-lc-bold: 'LostfieldCondensed-bold';
+$font-lc-medium: 'LostfieldCondensed-medium';
+$font-lc-regular: 'LostfieldCondensed';
+$font-lc-light: 'LostfieldCondensed-light';
+
+
+$font-s-black: 'Satoshi-Black';
+$font-s-bold: 'Satoshi-Bold';
+$font-s-medium: 'Satoshi-Medium';
+$font-s-regular: 'Satoshi-Regular';
+$font-s-light: 'Satoshi-Light';
+
+
+$font-n-bold: 'Nippo-Bold';

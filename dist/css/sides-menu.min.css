@@ -1,0 +1,10 @@
+/* 
+ * Sides-menu
+ * Copyright 2018
+ * Author Name: Abdelhak Lallouche
+ * Author Username: @abdlhaklallouche
+ * Author Email: abdlhaklalouche@gmail.com
+ * Licensed under MIT (https://github.com/abdlhaklallouche/sides-menu/LICENSE)
+ */
+ .sides-menu-nav{position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.4);z-index:1010;visibility:hidden}.sides-menu-nav .sides-menu-nav-content{position:absolute;top:0;left:-300px;bottom:0;width:300px;background-color:white;z-index:2;overflow-x:hidden;overflow-y:auto;-webkit-transition:all .5s;-moz-transition:all .5s;-ms-transition:all .5s;-o-transition:all .5s;transition:all .5s;-webkit-box-shadow:0 0 10px 0 rgba(0,0,0,0.5);-moz-box-shadow:0 0 10px 0 rgba(0,0,0,0.5);-ms-box-shadow:0 0 10px 0 rgba(0,0,0,0.5);-o-box-shadow:0 0 10px 0 rgba(0,0,0,0.5);box-shadow:0 0 10px 0 rgba(0,0,0,0.5)}.sides-menu-nav .sides-menu-nav-content.full{left:-100%;width:100%}.sides-menu-nav.show{visibility:visible}.sides-menu-nav.show .sides-menu-nav-content{left:0;right:auto}.sides-menu-nav.left .sides-menu-nav-content{left:-300px;right:auto}.sides-menu-nav.left .sides-menu-nav-content.full{left:-100%}.sides-menu-nav.left.show .sides-menu-nav-content{left:0;right:auto}.sides-menu-nav.right .sides-menu-nav-content{right:-300px;left:auto}.sides-menu-nav.right .sides-menu-nav-content.full{right:-100%}.sides-menu-nav.right.show .sides-menu-nav-content{right:0;left:auto}.sides-menu-nav.top .sides-menu-nav-content{top:-100%;bottom:auto;height:100%}.sides-menu-nav.top.show .sides-menu-nav-content{top:0}.sides-menu-nav.top.right .sides-menu-nav-content{left:auto}.sides-menu-nav.top:not(.both) .sides-menu-nav-content{left:0}.sides-menu-nav.top:not(.both).right .sides-menu-nav-content{right:0;left:auto}.sides-menu-nav.bottom .sides-menu-nav-content{bottom:-100%;top:auto;height:100%}.sides-menu-nav.bottom.show .sides-menu-nav-content{bottom:0}.sides-menu-nav.bottom.right .sides-menu-nav-content{left:auto}.sides-menu-nav.bottom:not(.both) .sides-menu-nav-content{left:0}.sides-menu-nav.bottom:not(.both).right .sides-menu-nav-content{right:0;left:auto}
+ /*# sourceMappingURL=sides-menu.min.css.map */

@@ -1,0 +1,128 @@
+footer {
+    padding: 55px 0;
+    @media (max-width: 768px) {
+        padding: 30px 0;
+    }
+    p {
+        color: $greyscale300;
+        font-size: 13px;
+        line-height: 1.5;
+        strong {
+            text-transform: uppercase;
+            font-size: 12px;
+            color: $greyscale50;
+        }
+    }
+    a {
+        color: $yellow;
+        transition: all 0.3s ease-in-out;
+        font-size: 13px;
+        @media (max-width: 768px) {
+            font-size: 15px;
+        }
+        &:hover {
+            color: $greyscale50;
+            text-decoration: none;
+        }
+    }
+    .foot-title {
+        margin-bottom: 15px;
+        @media (max-width: 768px) {
+            margin-bottom: 0px;
+        }
+        h4 {
+            text-transform: uppercase;
+            padding-bottom: 0;
+            color: $greyscale50;
+        }
+    }
+    a.foot-btn {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 11px;
+        font-family: $font-s-bold;
+        background: rgba(250, 255, 0, 0.2);
+        border: 1px solid $yellow;
+        backdrop-filter: blur(4px);
+        border-radius: 6px;
+        padding: 10px 22px;
+        line-height: 4;
+        @media (max-width: 768px) {
+            line-height: 6;
+        }
+        &:hover {
+            border: 1px solid $greyscale50;
+        }
+    }
+    .footer-menu {
+        ul {
+            @media (max-width:768px) {
+                margin-bottom: 0;
+                margin-left: 15px;
+            }
+            li {
+                &::marker {
+                    content: none;
+                }
+                a {
+                    padding: 4px 0;
+                }
+            }
+        }
+    }
+    .foot-bot {
+        border-top: 1px solid #424242;
+        border-bottom: 1px solid #424242;
+        margin-top: 70px;
+        padding: 15px 0;
+        @media (max-width: 768px) {
+            margin-top: 0;
+            border: 0;
+        }
+        .payment-cards {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            @media (max-width: 768px) {
+                padding-top: 20px;
+                justify-content: center;
+            }
+            .card-single{ 
+                margin-left: 10px;
+                @media (max-width: 768px) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .socil-media{ 
+            display: flex;
+            align-items: center;
+            @media (max-width: 768px) {
+                justify-content: space-between;
+            }
+            .foot-title {
+                margin-bottom: 0;
+            }
+            .media-links {
+                display: flex;
+                align-items: center;
+                margin-top: -7px;
+                margin-left: 20px;
+                .media-single {
+                    margin-right: 10px;
+                    a {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .foot-border {
+            border-bottom: 1px solid #E0E0E0;
+            padding: 15px;
+        }
+    }
+}
